@@ -15,6 +15,10 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 # Inherit from mi439 device
 $(call inherit-product, device/xiaomi/mi439/device.mk)
 
+# Overlays
+PRODUCT_PACKAGES += \
+    xiaomi_pine_overlay_lineage \
+    xiaomi_olive_overlay_lineage
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mi439
